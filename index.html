@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>James' Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- Examples of h1 - h4 tags, ul, ol, img, and li -->
+        <!-- 
+        <h1>This is my website</h1>
+        <h2>This website doesn't have any important info</h2>
+        <h3>This is even smaller text</h3>
+        <h4>Really small text</h4>
+
+        <h4>Recipe for apple pie</h4>
+        <ul>
+            <li>apples</li>
+            <li>flour</li>
+        </ul>
+        <h4>Instructions to make pie</h4>
+        <ol>
+            <li>Cut apples</li>
+            <li>make crust</li>
+            <li>put apples in crust</li>
+        </ol> 
+       <img src = "jett.png"> 
+       -->
+
+        <!--
+        Homework
+        Create a website that shows you information about
+        at least 5 different valorant characters, what they do,
+        what they're good at, and any other information you want to add. You can use any of the tags we learned about in class
+        to make the website look nice.
+        Good Luck!
+        -->
+        <header class="hero">
+            <p class="eyebrow">Agent Guide</p>
+            <h1>Valorant Characters</h1>
+            <p class="intro">A quick look at several agents and their signature abilities.</p>
+        </header>
+
+        <main class="agent-grid">
+            <section class="agent-card" data-agent="jett" tabindex="0" role="button" aria-label="Learn more about Jett">
+                <div class="agent-image">
+                    <img src="jett.png" alt="Jett">
+                </div>
+                <div class="agent-info">
+                    <p class="agent-number">01</p>
+                    <h2>Jett <span>捷风</span></h2>
+                    <p class="click-hint">Click to learn more</p>
+                    <ul>
+                        <li>Cloudburst 瞬云</li>
+                        <li>Updraft 凌空</li>
+                        <li>Tailwind 逐风</li>
+                        <li>Blade Storm 飓刃</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="agent-card" data-agent="phoenix" tabindex="0" role="button" aria-label="Learn more about Phoenix">
+                <div class="agent-image">
+                    <img src="不.webp" alt="Phoenix">
+                </div>
+                <div class="agent-info">
+                    <p class="agent-number">02</p>
+                    <h2>Phoenix <span>不死鸟</span></h2>
+                    <p class="click-hint">Click to learn more</p>
+                    <ul>
+                        <li>Curveball 闪光曲球</li>
+                        <li>Hot Hands 火冒三丈</li>
+                        <li>Blaze 烈焰壁垒</li>
+                        <li>Run It Back 再火一回</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="agent-card" data-agent="yoru" tabindex="0" role="button" aria-label="Learn more about Yoru">
+                <div class="agent-image">
+                    <img src="夜.webp" alt="Yoru">
+                </div>
+                <div class="agent-info">
+                    <p class="agent-number">03</p>
+                    <h2>Yoru <span>夜露</span></h2>
+                    <p class="click-hint">Click to learn more</p>
+                    <ul>
+                        <li>Fakeout 出其不意</li>
+                        <li>Blindside 攻其不备</li>
+                        <li>Gatecrash 不请自来</li>
+                        <li>Dimensional Drift 神鬼不觉</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="agent-card" data-agent="cypher" tabindex="0" role="button" aria-label="Learn more about Cypher">
+                <div class="agent-image">
+                    <img src="零.webp" alt="Cypher">
+                </div>
+                <div class="agent-info">
+                    <p class="agent-number">04</p>
+                    <h2>Cypher <span>零</span></h2>
+                    <p class="click-hint">Click to learn more</p>
+                    <ul>
+                        <li>Trapwire 震慑绊线</li>
+                        <li>Cyber Cage 赛博牢笼</li>
+                        <li>Spycam 间谍摄像机</li>
+                        <li>Neural Theft 神经取析</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <section class="agent-details" aria-live="polite" hidden>
+            <button class="close-details" type="button" aria-label="Close character details">×</button>
+            <div class="details-image">
+                <img src="" alt="">
+            </div>
+            <div class="details-content">
+                <p class="details-role"></p>
+                <h2 class="details-name"></h2>
+                <p class="details-description"></p>
+                <h3>Good At</h3>
+                <ul class="details-strengths"></ul>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
